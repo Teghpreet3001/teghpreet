@@ -557,7 +557,7 @@ main {
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { color: var(hsl(0, 0%, 60%)); }
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
@@ -1984,7 +1984,8 @@ body.day {
   --text-primary: hsl(0, 0%, 10%); /* Black for body text */
   --text-secondary: hsl(0, 0%, 30%); /* Dark grey for secondary text */
   --text-heading: hsl(0, 0%, 20%); /* Dark grey for headings */
-  --navbar-text: hsl(0, 0%, 100%); /* White for navbar links */
+  --navbar-text: hsl(0, 0%, 10%); /* White for navbar links */
+  --navbar-color: hsl(0, 0%, 90%);
 }
 
 /* Night mode text colors (default) */
@@ -1993,6 +1994,7 @@ body.night {
   --text-secondary: hsl(0, 0%, 70%); /* Light grey */
   --text-heading: hsl(0, 0%, 100%); /* White */
   --navbar-text: hsl(0, 0%, 100%); /* White */
+  --navbar-color: hsla(240, 1%, 17%, 0.75);
 }
 
 /* General Text Styles */
@@ -2018,12 +2020,14 @@ time,
   color: var(--text-heading);
 }
 
+.navbar {
+  background: var(--navbar-color);
+}
+
 /* Navbar Text (kept white in day mode) */
 .navbar-link {
   color: var(--navbar-text);
 }
-
-
 
 /* Day theme */
 body.day {
@@ -2153,6 +2157,7 @@ body.day {
   --text-resume-subtitle: hsl(0, 0%, 30%); /* Dark grey for resume subtitles */
   --text-skill-title: hsl(0, 0%, 10%); /* Black for skill titles */
   --text-skill-percentage: hsl(0, 0%, 30%); /* Dark grey for skill percentages */
+  --text-timeline: hsl(0, 0%, 20%);
 }
 
 /* Night mode (default) */
@@ -2163,6 +2168,7 @@ body.night {
   --text-resume-subtitle: hsl(0, 0%, 70%); /* Light grey */
   --text-skill-title: hsl(0, 0%, 100%); /* White */
   --text-skill-percentage: hsl(0, 0%, 70%); /* Light grey */
+  --text-timeline: hsl(0, 0%, 84%);
 }
 
 /* Project Titles and Categories */
@@ -2181,6 +2187,10 @@ body.night {
 
 .timeline span {
   color: var(--text-resume-subtitle);
+}
+
+.timeline-text {
+  color: var(--text-timeline)
 }
 
 /* Skill Titles and Percentages */
