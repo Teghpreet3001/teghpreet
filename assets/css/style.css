@@ -2102,47 +2102,21 @@ body.night {
   color: var(--toggle-text);
 }
 
-/* Day mode service headings */
-body.day {
-  --service-heading: hsl(0, 0%, 10%); /* Black for service headings */
-}
-
-/* Night mode service headings (default) */
-body.night {
-  --service-heading: hsl(0, 0%, 100%); /* White */
-}
-
-/* Service Headings */
-.service-item-title {
-  color: var(--service-heading);
-}
-
 
 body.day {
-  --testimonials-item-title-heading: hsl(0, 0%, 10%); /* Black for service headings */
-}
-
-/* Night mode service headings (default) */
-body.night {
-  --testimonials-item-title-heading: hsl(0, 0%, 100%); /* White */
-}
-
-/* Service Headings */
-.testimonials-item-title {
-  color: var(--testimonials-item-title-heading);
-}
-
-body.day {
-  --contact-form-heading: hsl(0, 0%, 10%); /* Black for service headings */
+  --contact-form-heading: hsl(0, 0%, 10%); 
   --modal-title: hsl(0, 0%, 10%);
   --data-modal-text: hsl(0, 0%, 10%);
+  --testimonials-item-title-heading: hsl(0, 0%, 10%); 
+  --service-heading: hsl(0, 0%, 10%);
 }
 
-/* Night mode service headings (default) */
 body.night {
-  --contact-form-heading: hsl(0, 0%, 100%); /* White */
+  --contact-form-heading: hsl(0, 0%, 100%); 
   --modal-title: hsl(0, 0%, 100%);
   --data-modal-text: hsl(0, 0%, 70%);
+  --testimonials-item-title-heading: hsl(0, 0%, 100%);
+  --service-heading: hsl(0, 0%, 100%); /* White */
 }
 
 /* Service Headings */
@@ -2156,6 +2130,14 @@ body.night {
 
 .modal-content p {
   color: var(--data-modal-text);
+}
+
+.testimonials-item-title {
+  color: var(--testimonials-item-title-heading);
+}
+
+.service-item-title {
+  color: var(--service-heading);
 }
 
 /* Day mode text colors */
