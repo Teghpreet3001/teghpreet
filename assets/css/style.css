@@ -667,6 +667,10 @@ main {
   box-shadow: var(--shadow-1);
 }
 
+.testimonials-avatar-box img {
+  border-radius: 14px; /* Align the image's border radius with the box */
+}
+
 .testimonials-item-title { margin-bottom: 7px; }
 
 .testimonials-text {
@@ -1954,3 +1958,240 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* Day mode text colors */
+body.day {
+  --text-primary: hsl(0, 0%, 10%); /* Black */
+  --text-secondary: hsl(0, 0%, 30%); /* Dark grey */
+}
+
+/* Reset to night mode text colors */
+body.night {
+  --text-primary: hsl(0, 0%, 100%); /* White */
+  --text-secondary: hsl(0, 0%, 70%); /* Light grey */
+}
+
+/* Apply colors to elements */
+h1, h2, h3, h4, h5, h6, p, span, a {
+  color: var(--text-primary);
+}
+
+.contact-title, .contact-info address, .navbar-link, .blog-meta, .form-input::placeholder, time {
+  color: var(--text-secondary);
+}
+/* Day mode text colors */
+body.day {
+  --text-primary: hsl(0, 0%, 10%); /* Black for body text */
+  --text-secondary: hsl(0, 0%, 30%); /* Dark grey for secondary text */
+  --text-heading: hsl(0, 0%, 20%); /* Dark grey for headings */
+  --navbar-text: hsl(0, 0%, 100%); /* White for navbar links */
+}
+
+/* Night mode text colors (default) */
+body.night {
+  --text-primary: hsl(0, 0%, 100%); /* White */
+  --text-secondary: hsl(0, 0%, 70%); /* Light grey */
+  --text-heading: hsl(0, 0%, 100%); /* White */
+  --navbar-text: hsl(0, 0%, 100%); /* White */
+}
+
+/* General Text Styles */
+h1, h2, h3, h4, h5, h6, p, span, a {
+  color: var(--text-primary);
+}
+
+.contact-title, 
+.contact-info address, 
+.blog-meta, 
+time, 
+.form-input::placeholder {
+  color: var(--text-secondary);
+}
+
+/* Headings Styling */
+.service-title, 
+.testimonials-title, 
+.clients-title, 
+.article-title, 
+.timeline .title-wrapper h3, 
+.skills-title {
+  color: var(--text-heading);
+}
+
+/* Navbar Text (kept white in day mode) */
+.navbar-link {
+  color: var(--navbar-text);
+}
+
+
+
+/* Day theme */
+body.day {
+  --bg-gradient-onyx: linear-gradient(to bottom right, hsl(45, 100%, 96%) 3%, hsl(0, 0%, 100%) 97%);
+  --bg-gradient-jet: linear-gradient(to bottom right, hsla(45, 100%, 96%, 0.251) 0%, hsla(45, 100%, 96%, 0) 100%), hsl(45, 100%, 96%);
+  --jet: hsl(0, 0%, 90%);
+  --onyx: hsl(240, 1%, 95%);
+  /* --eerie-black-1: hsl(240, 2%, 90%); */
+  --eerie-black-2: hsl(240, 2%, 85%);
+  --smoky-black: hsl(0, 0%, 100%);
+  --white-1: hsl(0, 0%, 0%);
+  --light-gray: hsl(0, 0%, 50%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(0, 5%, 89%) 0%,  /* lighter tone */
+    hsla(45, 20%, 80%, 0) 50%  /* even lighter with transparency */
+  );
+}
+
+/* Reset to night mode (default) */
+body.night {
+  --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
+  --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+  --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 1%, 17%);
+  --eerie-black-1: hsl(240, 2%, 13%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --smoky-black: hsl(0, 0%, 7%);
+  --white-1: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 84%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(0, 0%, 25%) 0%, 
+    hsla(0, 0%, 25%, 0) 50%
+  );
+}
+
+/* Day mode sidebar text colors */
+body.day {
+  --sidebar-title: hsl(0, 0%, 10%); /* Black for main titles like "Teghpreet Singh" */
+  --sidebar-subtitle: hsl(0, 0%, 30%); /* Dark grey for subtitles like "CS @ Georgia Tech" */
+  --contact-title: hsl(0, 0%, 30%); /* Dark grey for contact titles like "Email", "Phone" */
+  --contact-link: hsl(0, 0%, 20%); /* Black for contact details like "tmago3@gatech.edu" */
+  --toggle-text: hsl(0, 0%, 10%); /* Black for "Toggle" */
+}
+
+/* Night mode sidebar text colors (default) */
+body.night {
+  --sidebar-title: hsl(0, 0%, 100%); /* White */
+  --sidebar-subtitle: hsl(0, 0%, 70%); /* Light grey */
+  --contact-title: hsl(0, 0%, 70%); /* Light grey */
+  --contact-link: hsl(0, 0%, 100%); /* White */
+  --toggle-text: hsl(0, 0%, 100%); /* White */
+}
+
+/* Sidebar Main Title */
+.sidebar .name {
+  color: var(--sidebar-title);
+}
+
+/* Sidebar Subtitle */
+.sidebar .title {
+  color: var(--sidebar-subtitle);
+}
+
+.contact-title {
+  color: var(--contact-title);
+}
+
+.contact-link {
+  color: var(--contact-link);
+} 
+
+/* Toggle Button Text */
+#toggle {
+  color: var(--toggle-text);
+}
+
+/* Day mode service headings */
+body.day {
+  --service-heading: hsl(0, 0%, 10%); /* Black for service headings */
+}
+
+/* Night mode service headings (default) */
+body.night {
+  --service-heading: hsl(0, 0%, 100%); /* White */
+}
+
+/* Service Headings */
+.service-item-title {
+  color: var(--service-heading);
+}
+
+
+body.day {
+  --testimonials-item-title-heading: hsl(0, 0%, 10%); /* Black for service headings */
+}
+
+/* Night mode service headings (default) */
+body.night {
+  --testimonials-item-title-heading: hsl(0, 0%, 100%); /* White */
+}
+
+/* Service Headings */
+.testimonials-item-title {
+  color: var(--testimonials-item-title-heading);
+}
+
+body.day {
+  --contact-form-heading: hsl(0, 0%, 10%); /* Black for service headings */
+}
+
+/* Night mode service headings (default) */
+body.night {
+  --contact-form-heading: hsl(0, 0%, 100%); /* White */
+}
+
+/* Service Headings */
+.form-title {
+  color: var(--contact-form-heading);
+}
+
+
+
+/* Day mode text colors */
+body.day {
+  --text-project-title: hsl(0, 0%, 10%); /* Black for project titles */
+  --text-project-category: hsl(0, 0%, 30%); /* Dark grey for project categories */
+  --text-resume-title: hsl(0, 0%, 10%); /* Black for resume titles */
+  --text-resume-subtitle: hsl(0, 0%, 30%); /* Dark grey for resume subtitles */
+  --text-skill-title: hsl(0, 0%, 10%); /* Black for skill titles */
+  --text-skill-percentage: hsl(0, 0%, 30%); /* Dark grey for skill percentages */
+}
+
+/* Night mode (default) */
+body.night {
+  --text-project-title: hsl(0, 0%, 100%); /* White */
+  --text-project-category: hsl(0, 0%, 70%); /* Light grey */
+  --text-resume-title: hsl(0, 0%, 100%); /* White */
+  --text-resume-subtitle: hsl(0, 0%, 70%); /* Light grey */
+  --text-skill-title: hsl(0, 0%, 100%); /* White */
+  --text-skill-percentage: hsl(0, 0%, 70%); /* Light grey */
+}
+
+/* Project Titles and Categories */
+.project-title {
+  color: var(--text-project-title);
+}
+
+.project-category {
+  color: var(--text-project-category);
+}
+
+/* Resume Titles and Subtitles */
+.timeline-item-title {
+  color: var(--text-resume-title);
+}
+
+.timeline span {
+  color: var(--text-resume-subtitle);
+}
+
+/* Skill Titles and Percentages */
+.skill .title-wrapper h5 {
+  color: var(--text-skill-title);
+}
+
+.skill .title-wrapper data {
+  color: var(--text-skill-percentage);
+}
+

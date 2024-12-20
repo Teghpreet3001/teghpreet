@@ -1,26 +1,31 @@
 'use strict';
 
 
-  const d = new Date();
-  const hours = d.getHours();
-  const night = hours >= 19 || hours <= 7; // between 7pm and 7am
-  const body = document.querySelector('body');
-  const toggle = document.getElementById('toggle');
-  const input = document.getElementById('switch');
+'use strict';
 
-  if (night) {
-    input.checked = true;
+const toggle = document.getElementById('toggle');
+const input = document.getElementById('switch');
+const body = document.querySelector('body');
+
+// Apply saved theme from localStorage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  body.classList.add(savedTheme);
+  input.checked = savedTheme === 'day';
+}
+
+// Toggle theme on button click
+toggle.addEventListener('click', function () {
+  if (input.checked) {
+    body.classList.add('day');
+    body.classList.remove('night');
+    localStorage.setItem('theme', 'day');
+  } else {
     body.classList.add('night');
+    body.classList.remove('day');
+    localStorage.setItem('theme', 'night');
   }
-
-  toggle.addEventListener('click', function() {
-    const isChecked = input.checked;
-    if (isChecked) {
-      body.classList.remove('night');
-    } else {
-      body.classList.add('night');
-    }
-  });
+});
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -173,3 +178,4 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
