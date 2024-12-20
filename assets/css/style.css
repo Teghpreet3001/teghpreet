@@ -2134,11 +2134,15 @@ body.night {
 
 body.day {
   --contact-form-heading: hsl(0, 0%, 10%); /* Black for service headings */
+  --modal-title: hsl(0, 0%, 10%);
+  --data-modal-text: hsl(0, 0%, 10%);
 }
 
 /* Night mode service headings (default) */
 body.night {
   --contact-form-heading: hsl(0, 0%, 100%); /* White */
+  --modal-title: hsl(0, 0%, 100%);
+  --data-modal-text: hsl(0, 0%, 70%);
 }
 
 /* Service Headings */
@@ -2146,7 +2150,13 @@ body.night {
   color: var(--contact-form-heading);
 }
 
+.modal-title {
+  color: var(--modal-title);
+}
 
+.modal-content p {
+  color: var(--data-modal-text);
+}
 
 /* Day mode text colors */
 body.day {
