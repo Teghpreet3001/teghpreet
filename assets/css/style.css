@@ -2031,7 +2031,7 @@ body.day {
   --bg-gradient-jet: linear-gradient(to bottom right, hsla(45, 100%, 96%, 0.251) 0%, hsla(45, 100%, 96%, 0) 100%), hsl(45, 100%, 96%);
   --jet: hsl(0, 0%, 90%);
   --onyx: hsl(240, 1%, 95%);
-  /* --eerie-black-1: hsl(240, 2%, 90%); */
+  --eerie-black-1: hsl(0, 0%, 90%);
   --eerie-black-2: hsl(240, 2%, 85%);
   --smoky-black: hsl(0, 0%, 100%);
   --white-1: hsl(0, 0%, 0%);
@@ -2068,6 +2068,7 @@ body.day {
   --contact-title: hsl(0, 0%, 30%); /* Dark grey for contact titles like "Email", "Phone" */
   --contact-link: hsl(0, 0%, 20%); /* Black for contact details like "tmago3@gatech.edu" */
   --toggle-text: hsl(0, 0%, 10%); /* Black for "Toggle" */
+  --social-item-color: hsl(0, 0%, 20%);
 }
 
 /* Night mode sidebar text colors (default) */
@@ -2077,6 +2078,7 @@ body.night {
   --contact-title: hsl(0, 0%, 70%); /* Light grey */
   --contact-link: hsl(0, 0%, 100%); /* White */
   --toggle-text: hsl(0, 0%, 100%); /* White */
+  --social-item-color: hsla(0, 0%, 84%, 0.7);
 }
 
 /* Sidebar Main Title */
@@ -2102,6 +2104,9 @@ body.night {
   color: var(--toggle-text);
 }
 
+.social-item .social-link {
+  color: var(--social-item-color);
+}
 
 body.day {
   --contact-form-heading: hsl(0, 0%, 10%); 
