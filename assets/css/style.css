@@ -2118,6 +2118,7 @@ body.day {
   --data-modal-text: hsl(0, 0%, 10%);
   --testimonials-item-title-heading: hsl(0, 0%, 10%); 
   --service-heading: hsl(0, 0%, 10%);
+  --color-icon-box: hsl(0, 0%, 10%);
 }
 
 body.night {
@@ -2126,6 +2127,7 @@ body.night {
   --data-modal-text: hsl(0, 0%, 70%);
   --testimonials-item-title-heading: hsl(0, 0%, 100%);
   --service-heading: hsl(0, 0%, 100%); /* White */
+  --color-icon-box: var(--orange-yellow-crayola);
 }
 
 /* Service Headings */
@@ -2148,6 +2150,19 @@ body.night {
 .service-item-title {
   color: var(--service-heading);
 }
+
+.icon-box {
+  color: var(--color-icon-box);
+}
+
+.project-item-icon-box {
+  color: var(--color-icon-box);
+}
+
+.service-icon-box {
+  color: var(--color-icon-box);
+}
+
 
 /* Day mode text colors */
 body.day {
