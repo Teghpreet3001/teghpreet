@@ -7,37 +7,43 @@ const toggle = document.getElementById('toggle');
 const input = document.getElementById('switch');
 const body = document.querySelector('body');
 
-// Apply saved theme from localStorage
+// Apply saved theme from localStorage or set default to 'day'
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
+  // Apply saved theme
   body.classList.add(savedTheme);
-  input.checked = savedTheme === 'day';
+  input.checked = savedTheme === 'night'; // 'night' checked will set the toggle on
+} else {
+  // Set default theme to 'day' if no theme saved
+  body.classList.add('day');
+  input.checked = false; // 'day' theme doesn't require the checkbox to be checked
 }
 
-// Toggle theme on button click
-toggle.addEventListener('click', function () {
+// Toggle theme on input change (instead of click on label)
+input.addEventListener('change', function () {
   if (input.checked) {
-    body.classList.add('day');
-    body.classList.remove('night');
-    localStorage.setItem('theme', 'day');
-  } else {
+    // Switch to night mode
     body.classList.add('night');
     body.classList.remove('day');
     localStorage.setItem('theme', 'night');
+  } else {
+    // Switch to day mode
+    body.classList.add('day');
+    body.classList.remove('night');
+    localStorage.setItem('theme', 'day');
   }
 });
 
-// element toggle function
+// Sidebar toggle functionality for mobile (no change needed here)
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
-
-
-// sidebar variables
+// Sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
-// sidebar toggle functionality for mobile
+// Sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+
 
 
 
