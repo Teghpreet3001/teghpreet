@@ -7,6 +7,17 @@
  * copyright 2022 @codewithsadee
  */
 
+/* p {
+  white-space: nowrap; 
+} */
+
+a {
+  display: inline; /* Ensure the <a> tag does not break into a new line */
+}
+
+div, section {
+  width: auto; /* Allow content to use the full width */
+}
 
 .switch-wrapper {
   display: flex;
