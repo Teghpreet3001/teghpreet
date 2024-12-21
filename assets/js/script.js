@@ -179,3 +179,34 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+const emailForm = document.querySelector("[data-email]");
+emailForm.addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent default form submission
+
+  const formData = new FormData(emailForm);
+  const emailParams = {
+    fullname: formData.get("fullname"),
+    email: formData.get("email"),
+    message: formData.get("message"),
+  };
+
+  fetch("http://localhost:3000/send-email", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(emailParams),
+  })
+    .then((response) => {
+      if (response.ok) {
+        alert("Your message has been sent successfully!");
+        emailForm.reset();
+      } else {
+        alert("Failed to send your message. Please try again.");
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("Error sending message.");
+    });
+});
+
+
