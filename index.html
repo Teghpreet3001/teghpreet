@@ -489,49 +489,145 @@
           - clients
         -->
 
-        <section class="clients">
+        <section class="service">
 
-          <h3 class="h3 clients-title">Clients</h3>
+          <h3 class="h3 service-title">What Keeps Me Busy</h3>
 
-          <ul class="clients-list has-scrollbar">
+          <ul class="service-list has-scrollbar">
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/club-1.jpeg" alt="Google" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Google Product Inclusion & Equity Summit Scholar</h4>
+
+                <p class="service-item-text">
+                  Building platform services and networks using Python, Java, Go
+                </p>
+              </div>
+
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
+            
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/club-2.jpeg" alt="Microsoft" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Microsoft AI Skills Teaching Assistant</h4>
+
+                <p class="service-item-text">
+                  Building full-stack websites using HTML/CSS, JavaScript, React.js, Node.js
+              </div>
+
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
+            
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/club-4.jpeg" alt="Product @ GT" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Director of Community and Outreach, Product @ GT</h4>
+
+                <p class="service-item-text">
+                  Researching LLMs and Generative AI for NLP and CV Applications
+                </p>
+              </div>
+
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/club-5.png" alt="Google Developer Student Clubs" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Technical Lead, Google Developer Student Clubs</h4>
+
+                <p class="service-item-text">
+                  Developing Android and iOS Mobile apps using Kotlin, Swift, Firebase
+                </p>
+              </div>
+
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/club-7.jpeg" alt="Bits of Good" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Engineering Operations Coordinator, Bits of Good</h4>
+
+                <p class="service-item-text">
+                  Developing Android and iOS Mobile apps using Kotlin, Swift, Firebase
+                </p>
+              </div>
+
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/club-6.jpeg" alt="Stanford" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">CS106A Section Leader, Stanford University Code in Place</h4>
+
+                <p class="service-item-text">
+                  Researching LLMs and Generative AI for NLP and CV Applications
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/club-3.jpeg" alt="HexLabs" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">Software Engineer, HexLabs</h4>
+
+                <p class="service-item-text">
+                  Developing Android and iOS Mobile apps using Kotlin, Swift, Firebase
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/club-8.jpeg" alt="GT SGA" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h5 service-item-title">IT Board Member, GT Student Government Association</h4>
+
+                <p class="service-item-text">
+                  Developing Android and iOS Mobile apps using Kotlin, Swift, Firebase
+                </p>
+              </div>
+
             </li>
 
           </ul>
+
 
         </section>
 
@@ -931,8 +1027,8 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            <li class="project-item active" data-filter-item data-category="applications">
+              <a href="https://bit.ly/ethicash">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1301,21 +1397,16 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
-
+          <form action="http://localhost:3000/send-email" method="POST" class="form" data-form id="contactForm">
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
 
         </section>
