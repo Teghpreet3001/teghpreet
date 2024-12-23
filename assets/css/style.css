@@ -28,10 +28,10 @@ div, section {
   right: 0px; /* More space from the right edge */
 }
 
-@media (max-width: 100px) {
+@media (max-width: 580px) {
   .switch-wrapper {
-    top: auto; /* Reset top position */
-    bottom: 10px; /* Position it 10px from the bottom */
+    top: 75px;
+    bottom: auto; /* Position it 10px from the bottom */
     right: 10px; /* Position it 10px from the right */
   }
 }
