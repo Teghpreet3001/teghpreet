@@ -30,7 +30,7 @@ div, section {
 
 @media (max-width: 768px) {
   .switch-wrapper {
-    top: 10px; /* More space from the top on mobile */
+    top: 75px; /* More space from the top on mobile */
     right: 0px; /* More space from the right on mobile */
   }
 }
