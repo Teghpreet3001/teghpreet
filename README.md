@@ -1,6 +1,7 @@
 # personal portfolio
 
 fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+
 check out:  https://teghpreet3001.github.io/teghpreet/
 
 <!-- ## Demo
