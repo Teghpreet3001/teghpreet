@@ -422,6 +422,25 @@ main {
   border-radius: 20px;
 }
 
+.padded-avatar {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: transparent; /* Ensures the space is transparent */
+}
+
+@media (max-width: 580px) {
+  .padded-avatar {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent; /* Ensures the space is transparent */
+  }
+}
+
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
